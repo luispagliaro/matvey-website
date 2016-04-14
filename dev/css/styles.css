@@ -1,0 +1,314 @@
+/* START Bootstrap override */
+
+body > .container {
+  padding: 0;
+  background: transparent url(../images/transparentBackground.png) repeat left top;
+}
+
+.navbar-brand {
+  padding: 0 10px;
+}
+
+.news .media-object {
+  width: 100px;
+}
+
+.media-body,
+.media-left,
+.media-right {
+  padding-top: 10px;
+}
+
+.navbar {
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+
+.navbar .container {
+  background: #222;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.list-group-item {
+  border-color: gray;
+  background: #222;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.members .thumbnail {
+  margin-bottom: 0;
+  border: 0;
+  background: none;
+}
+
+.members .caption {
+  padding: 10px 0 0;
+  color: #fff;
+}
+
+.thumbnail {
+  padding: 2px;
+  background: lightgray;
+}
+
+.embed-responsive {
+  margin: 10px 0;
+}
+
+.btn-reviews .dropdown-menu {
+  font-size: 13px;
+  right: 50%;
+  left: auto;
+  margin-right: -160px;
+  background: #222;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+}
+
+#reviewsDropdownMenu {
+  color: #fff;
+  border-color: #333;
+  background: #222;
+}
+
+#reviewsDropdownMenu.active.focus,
+#reviewsDropdownMenu.active:focus,
+#reviewsDropdownMenu.active:hover,
+#reviewsDropdownMenu:active.focus,
+#reviewsDropdownMenu:active:focus,
+#reviewsDropdownMenu:active:hover,
+.open > .dropdown-toggle#reviewsDropdownMenu.focus,
+.open > .dropdown-toggle#reviewsDropdownMenu:focus,
+.open > .dropdown-toggle#reviewsDropdownMenu:hover {
+  background: #333;
+}
+
+
+/* END Bootstrap override */
+
+@font-face {
+  font-family: Celtic;
+  src: url(./fonts/CelticGaramond.ttf);
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  background: url(../images/background.jpg) no-repeat center top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+main {
+  margin-top: 50px;
+}
+
+header img,
+.separator.thicker {
+  display: none;
+}
+
+.separator {
+  width: 100%;
+  height: 5px;
+  margin: 0;
+  border: 0;
+  background: url(../images/headerSeparator.jpg);
+  background-size: 100% 100%;
+}
+
+.thicker {
+  height: 20px;
+}
+
+.mainFooter {
+  padding: 15px 0;
+  border-top: 1px solid #a0a0a0;
+  background: #222;
+}
+
+small {
+  margin-top: 10px;
+}
+
+h1,
+h2 {
+  font-family: Celtic;
+  font-weight: bold;
+  color: #d5ad6d;
+  background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3,
+h4 {
+  font-family: Celtic;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #ffc93b;
+}
+
+h5 {
+  font-family: Celtic;
+  font-weight: bold;
+}
+
+time {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+address {
+  font-size: 12px;
+  margin: 0;
+}
+
+a {
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+ol {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+iframe {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.shows #map,
+.trailer iframe {
+  height: 200px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.mainReviews article {
+  margin-top: 20px;
+}
+
+.mainReviews article:not(:first-of-type) {
+  display: none;
+}
+
+.mainReviews p {
+  text-align: right;
+}
+
+.history article {
+  margin-top: 15px;
+}
+
+.discography img {
+  margin-bottom: 10px;
+}
+
+audio {
+  width: 100%;
+}
+
+.contactForm label,
+.contactForm div {
+  padding: 5px 0;
+}
+
+.contactForm p,
+.contact aside p {
+  margin-top: 10px;
+}
+
+.contact {
+  margin-bottom: 10px;
+}
+
+.reviews hr {
+  margin: 10px 0;
+}
+
+.articles article:not(:first-child) {
+  display: none;
+}
+
+.btn-reviews {
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  /* START Bootstrap override */
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  /* END Bootstrap override */
+  main {
+    margin-top: 0;
+  }
+  .news {
+    margin-bottom: 15px;
+  }
+  header img {
+    margin-top: 50px;
+  }
+  header img,
+  .separator.thicker {
+    display: block;
+    padding: 0 !important;
+  }
+  .discography article .row {
+    display: flex;
+  }
+  .cover {
+    width: 280px;
+  }
+  .recordInfo {
+    padding-left: 0;
+    flex: 1;
+  }
+  ul {
+    padding-left: 15px;
+  }
+  .btn-reviews {
+    display: none;
+  }
+}
