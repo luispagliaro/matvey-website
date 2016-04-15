@@ -33,6 +33,10 @@ body > .container {
   color: #fff;
 }
 
+.nav > li {
+  height: 35px;
+}
+
 .list-group-item {
   border-color: gray;
   background: #222;
