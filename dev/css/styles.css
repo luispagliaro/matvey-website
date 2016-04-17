@@ -25,6 +25,10 @@ body > .container {
   background: transparent;
 }
 
+.navbar-collapse {
+  min-height: 50px;
+}
+
 .navbar .container {
   background: #222;
 }
