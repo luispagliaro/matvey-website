@@ -2,7 +2,27 @@
 
 body > .container {
   padding: 0;
-  background: transparent url(../images/transparentBackground.png) repeat left top;
+}
+
+a {
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  text-decoration: none;
+  color: #ffd700;
 }
 
 .navbar-brand {
@@ -20,7 +40,28 @@ body > .container {
 }
 
 .navbar .container {
+  position: relative;
   background: #222;
+}
+
+.social {
+  position: absolute;
+  top: 11px;
+  right: 65px;
+}
+
+.fa {
+  margin-left: 5px;
+}
+
+.social_fb:hover,
+.social_fb:focus {
+  color: #3B5998;
+}
+
+.social_yt:hover,
+.social_yt:focus {
+  color: #DD4B39;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -50,7 +91,9 @@ body {
 }
 
 main {
+  overflow-y: hidden;
   margin-top: 50px;
+  background: transparent url(../images/transparentBackground.png) repeat left top;
 }
 
 header img,
@@ -114,27 +157,6 @@ time {
 address {
   font-size: 12px;
   margin: 0;
-}
-
-a {
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  transition: all 300ms linear;
-  text-decoration: none;
-  color: #fff;
-}
-
-a:visited {
-  text-decoration: none;
-  color: #fff;
-}
-
-a:hover,
-.navbar-inverse .navbar-nav > li > a:focus,
-.navbar-inverse .navbar-nav > li > a:hover {
-  text-decoration: none;
-  color: #ffd700;
 }
 
 ol {
@@ -323,6 +345,9 @@ audio {
   }
   .navbar-brand {
     display: none;
+  }
+  .social {
+    right: 10px;
   }
   main {
     margin-top: 0;

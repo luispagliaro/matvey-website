@@ -49,7 +49,7 @@ gulp.task('html-watcher', function() {
 
 // Watches for changes in CSS files.
 gulp.task('css-watcher', function() {
-  gulp.watch('./dev/css/styles.css', ['reload']);
+  gulp.watch('./dev/css/*.css', ['reload']);
 });
 
 // Reloads index.html on HTML, CSS or JS files changes
