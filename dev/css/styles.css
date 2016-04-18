@@ -1,4 +1,4 @@
-/* START Bootstrap override */
+/* START GLOBAL STYLES */
 
 body > .container {
   padding: 0;
@@ -7,16 +7,6 @@ body > .container {
 
 .navbar-brand {
   padding: 0 10px;
-}
-
-.news .media-object {
-  width: 100px;
-}
-
-.media-body,
-.media-left,
-.media-right {
-  padding-top: 10px;
 }
 
 .navbar {
@@ -41,68 +31,10 @@ body > .container {
   height: 35px;
 }
 
-.list-group-item {
-  border-color: gray;
-  background: #222;
-}
-
-.list-group-item:first-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.members .thumbnail {
-  margin-bottom: 0;
-  border: 0;
-  background: none;
-}
-
-.members .caption {
-  padding: 10px 0 0;
-  color: #fff;
-}
-
 .thumbnail {
   padding: 2px;
   background: lightgray;
 }
-
-.embed-responsive {
-  margin: 10px 0;
-}
-
-.btn-reviews .dropdown-menu {
-  font-size: 13px;
-  right: 50%;
-  left: auto;
-  margin-right: -160px;
-  background: #222;
-}
-
-.dropdown-menu > li > a {
-  color: #fff;
-}
-
-#reviewsDropdownMenu {
-  color: #fff;
-  border-color: #333;
-  background: #222;
-}
-
-#reviewsDropdownMenu.active.focus,
-#reviewsDropdownMenu.active:focus,
-#reviewsDropdownMenu.active:hover,
-#reviewsDropdownMenu:active.focus,
-#reviewsDropdownMenu:active:focus,
-#reviewsDropdownMenu:active:hover,
-.open > .dropdown-toggle#reviewsDropdownMenu.focus,
-.open > .dropdown-toggle#reviewsDropdownMenu:focus,
-.open > .dropdown-toggle#reviewsDropdownMenu:hover {
-  background: #333;
-}
-
-
-/* END Bootstrap override */
 
 @font-face {
   font-family: Celtic;
@@ -214,8 +146,30 @@ iframe {
   width: 100%;
 }
 
-textarea {
-  resize: none;
+
+/* END GLOBAL STYLES */
+
+
+/* START INDEX STYLES */
+
+.news .media-object {
+  width: 100px;
+}
+
+.media-body,
+.media-left,
+.media-right {
+  padding-top: 10px;
+}
+
+.list-group-item {
+  border-color: gray;
+  background: #222;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .shows #map,
@@ -237,16 +191,35 @@ textarea {
   text-align: right;
 }
 
+
+/* END INDEX STYLES */
+
+
+/* START BANDA STYLES */
+
 .history article {
   margin-top: 15px;
 }
 
-.discography img {
-  margin-bottom: 10px;
+.members .thumbnail {
+  margin-bottom: 0;
+  border: 0;
+  background: none;
 }
 
-audio {
-  width: 100%;
+.members .caption {
+  padding: 10px 0 0;
+  color: #fff;
+}
+
+
+/* END BANDA STYLES */
+
+
+/* START CONTACTO STYLES */
+
+textarea {
+  resize: none;
 }
 
 .contactForm label,
@@ -263,6 +236,26 @@ audio {
   margin-bottom: 10px;
 }
 
+
+/* END CONTACTO STYLES */
+
+
+/* START DISCOGRAFIA STYLES */
+
+.discography img {
+  margin-bottom: 10px;
+}
+
+audio {
+  width: 100%;
+}
+
+
+/* END DISCOGRAFIA STYLES */
+
+
+/* START RESEÑAS STYLES */
+
 .reviews hr {
   margin: 10px 0;
 }
@@ -275,8 +268,51 @@ audio {
   margin-top: 15px;
 }
 
+.btn-reviews .dropdown-menu {
+  font-size: 13px;
+  right: 50%;
+  left: auto;
+  margin-right: -160px;
+  background: #222;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+}
+
+#reviewsDropdownMenu {
+  color: #fff;
+  border-color: #333;
+  background: #222;
+}
+
+#reviewsDropdownMenu.active.focus,
+#reviewsDropdownMenu.active:focus,
+#reviewsDropdownMenu.active:hover,
+#reviewsDropdownMenu:active.focus,
+#reviewsDropdownMenu:active:focus,
+#reviewsDropdownMenu:active:hover,
+.open > .dropdown-toggle#reviewsDropdownMenu.focus,
+.open > .dropdown-toggle#reviewsDropdownMenu:focus,
+.open > .dropdown-toggle#reviewsDropdownMenu:hover {
+  background: #333;
+}
+
+
+/* END RESEÑAS STYLES */
+
+
+/* START VIDEOS STYLES */
+
+.embed-responsive {
+  margin: 10px 0;
+}
+
+
+/* END VIDEOS STYLES */
+
 @media (min-width: 768px) {
-  /* START Bootstrap override */
+  /* START GLOBAL STYLES */
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -288,12 +324,8 @@ audio {
   .navbar-brand {
     display: none;
   }
-  /* END Bootstrap override */
   main {
     margin-top: 0;
-  }
-  .news {
-    margin-bottom: 15px;
   }
   header img {
     margin-top: 50px;
@@ -303,6 +335,13 @@ audio {
     display: block;
     padding: 0 !important;
   }
+  /* END GLOBAL STYLES */
+  /* START INDEX STYLES */
+  .news {
+    margin-bottom: 15px;
+  }
+  /* END INDEX STYLES */
+  /* START DISCOGRAFIA STYLES */
   .discography article .row {
     display: flex;
   }
@@ -313,10 +352,13 @@ audio {
     padding-left: 0;
     flex: 1;
   }
+  /* END DISCOGRAFIA STYLES */
+  /* START RESEÑAS STYLES */
   ul {
     padding-left: 15px;
   }
   .btn-reviews {
     display: none;
   }
+  /* END RESEÑAS STYLES */
 }
