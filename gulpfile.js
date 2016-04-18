@@ -2,6 +2,7 @@
 
 var gulp = require('gulp'),
   source = require('vinyl-source-stream'),
+  del = require('del'),
   $ = require('gulp-load-plugins')({
     lazy: true
   });
@@ -16,6 +17,11 @@ function log(msg) {
   } else {
     $.util.log($.util.colors.blue(msg));
   }
+}
+
+function clean(path, done) {
+  log('Cleaning: ' + $.util.colors.blue(path));
+  del(path, done);
 }
 
 // Runs the dev server
@@ -54,12 +60,7 @@ gulp.task('reload', function() {
 });
 
 // Runs the prod server
-gulp.task('prod-server', ['buildHTML', 'buildCSS', 'buildJS', 'copyFiles'], function() {
-  $.connect.server({
-    root: 'prod',
-    livereload: false
-  });
-});
+gulp.task('build', ['clean', 'buildHTML', 'buildCSS', 'buildJS', 'copyFiles'], function() {});
 
 // Minifies HTML
 gulp.task('buildHTML', function() {
@@ -103,4 +104,9 @@ gulp.task('copyFiles', function() {
       base: 'dev'
     })
     .pipe(gulp.dest('prod'));
+});
+
+// Deletes files.
+gulp.task('clean', function(done) {
+  clean('prod', done);
 });
