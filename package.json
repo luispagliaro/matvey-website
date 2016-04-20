@@ -29,7 +29,6 @@
     "gulp-useref": "^3.0.8",
     "gulp-util": "^3.0.7",
     "gulp-wiredep": "0.0.0",
-    "jshint": "^2.9.1",
-    "vinyl-source-stream": "^1.1.0"
+    "jshint": "^2.9.1"
   }
 }

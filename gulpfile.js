@@ -1,7 +1,6 @@
 'use strict';
 
 var gulp = require('gulp'),
-  source = require('vinyl-source-stream'),
   del = require('del'),
   $ = require('gulp-load-plugins')({
     lazy: true
