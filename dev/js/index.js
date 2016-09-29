@@ -2,16 +2,18 @@ function initMap() {
   var mapDiv = document.getElementById('map'),
     map = new google.maps.Map(mapDiv, {
       center: {
-        lat: -32.944709,
-        lng: -60.655533
+        // lat: -32.944709,
+        // lng: -60.655533
+        lat: -33.696774,
+        lng: -61.614476
       },
       zoom: 12
     });
 
-  var contentString = '<h4>Sindicato de Canillitas</h4><address>Buenos Aires 1346, Rosario, Santa Fe</address>',
+  var contentString = '<h4>Pandemia De Metal</h4><address>Maipú y las Vias, Elortondo, Santa Fe</address>',
     location = {
-      lat: -32.954242,
-      lng: -60.634434
+      lat: -33.696774,
+      lng: -61.614476
     },
     infoWindow = new google.maps.InfoWindow({
       content: contentString
@@ -19,7 +21,7 @@ function initMap() {
     marker = new google.maps.Marker({
       position: location,
       map: map,
-      title: 'Sindicato de Canillitas'
+      title: 'Pandemia De Metal'
     });
 
   marker.addListener('click', function() {
